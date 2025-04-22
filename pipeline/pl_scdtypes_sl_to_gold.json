@@ -59,6 +59,8 @@
 			{
 				"name": "df_scdty1_loans",
 				"type": "ExecuteDataFlow",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "df_scdty1_accounts",
@@ -93,6 +95,8 @@
 			{
 				"name": "df_scdty1_loanpymts",
 				"type": "ExecuteDataFlow",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "df_scdty1_loans",
@@ -127,6 +131,8 @@
 			{
 				"name": "df_scdty1_transactions",
 				"type": "ExecuteDataFlow",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "df_scdty1_loanpymts",

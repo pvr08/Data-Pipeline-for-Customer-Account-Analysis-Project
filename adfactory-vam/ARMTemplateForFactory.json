@@ -314,6 +314,8 @@
 					{
 						"name": "df_scdty1_accounts",
 						"type": "ExecuteDataFlow",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [],
 						"policy": {
 							"timeout": "0.12:00:00",
@@ -657,7 +659,8 @@
 						"interval": 1,
 						"startTime": "2025-04-21T19:24:00",
 						"endTime": "2025-04-21T23:20:00",
-						"timeZone": "Eastern Standard Time"
+						"timeZone": "Eastern Standard Time",
+						"schedule": {}
 					}
 				}
 			},

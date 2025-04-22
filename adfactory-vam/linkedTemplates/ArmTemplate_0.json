@@ -1583,8 +1583,7 @@
 						"     skipDuplicateMapInputs: true,",
 						"     skipDuplicateMapOutputs: true) ~> select",
 						"select derive(src_HashKey = crc32(concat(toString(src_customer_id),src_first_name,src_last_name,src_address,src_city,src_state,toString(src_zip)))) ~> AddHashkey",
-						"AddHashkey, Customertable lookup(src_customer_id == CUSTOMERID",
-						"     && src_HashKey == toLong(HASHKEY),",
+						"AddHashkey, Customertable lookup(src_customer_id == CUSTOMERID,",
 						"     multiple: false,",
 						"     pickup: 'any',",
 						"     broadcast: 'auto')~> lookup1",
@@ -1846,6 +1845,8 @@
 					{
 						"name": "df_scdty1_loans",
 						"type": "ExecuteDataFlow",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "df_scdty1_accounts",
@@ -1888,6 +1889,8 @@
 					{
 						"name": "df_scdty1_loanpymts",
 						"type": "ExecuteDataFlow",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "df_scdty1_loans",
@@ -1930,6 +1933,8 @@
 					{
 						"name": "df_scdty1_transactions",
 						"type": "ExecuteDataFlow",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "df_scdty1_loanpymts",

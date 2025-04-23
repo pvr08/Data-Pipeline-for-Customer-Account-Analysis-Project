@@ -2,7 +2,7 @@
 	"name": "TriggerOnPrem_to_Gold",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {

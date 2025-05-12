@@ -23,6 +23,15 @@
 		"AzureSqlDatabase_properties_typeProperties_userName": {
 			"value": "admin25"
 		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "sqlservervams.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "sqldb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "admin25"
+		},
 		"FileServer_properties_typeProperties_host": {
 			"value": "C:\\Users\\admin25\\Documents\\files"
 		},
